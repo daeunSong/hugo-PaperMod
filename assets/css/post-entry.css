@@ -39,7 +39,7 @@
 }
 
 .post-entry {
-    min-height: 180px;
+    min-height: 170px;
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
@@ -127,7 +127,7 @@
       position: relative;
       margin-right: var(--gap);
       text-align: left;
-      width: 250px
+      width: 230px
   }
 
   .post-entry .entry-cover img {
