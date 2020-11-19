@@ -44,6 +44,7 @@
     padding: var(--gap);
     background: var(--entry);
     border-radius: var(--radius);
+    text-align: justify;
     transition: transform .1s
 }
 
@@ -56,7 +57,7 @@
 }
 
 .entry-header h2 {
-    margin-top: var(--gap);
+    margin-top: 5px;
     font-size: 20px;
 }
 
@@ -64,6 +65,7 @@
     margin: 8px 0;
     color: var(--secondary);
     font-size: 14px;
+    text-align: justify;
     line-height: 1.6;
     overflow: hidden;
     display: -webkit-box;
@@ -94,40 +96,48 @@
     display: inline
 }
 
+.entry-cover {
+    margin-bottom: var(--gap);
+    text-align: center
+}
+
+.entry-cover img {
+    border-radius: var(--radius);
+    pointer-events: none;
+    width: 100%
+}
+
 @media screen and (max-width:600px) {
-  .entry-cover {
+  .post-entry .entry-cover {
       text-align: center
   }
 
-  .entry-cover img {
+  .post-entry .entry-cover img {
       border-radius: var(--radius);
       pointer-events: none;
       width: 100%
   }
 
-  .entry-cover a {
-      color: var(--secondary);
-      box-shadow: 0 1px 0 var(--primary)
-  }
 }
 
 @media screen and (min-width:600px) {
-  .entry-cover {
+  .post-entry .entry-cover {
       margin-right: var(--gap);
       margin-bottom: var(--gap);
       text-align: left;
-      width: 300px;
+      width: 250px;
       float: left
   }
 
-  .entry-cover img {
+  .post-entry .entry-cover img {
       border-radius: var(--radius);
       pointer-events: none;
       width: 100%
   }
 
-  .entry-cover a {
-      color: var(--secondary);
-      box-shadow: 0 1px 0 var(--primary)
-  }
+}
+
+.post-entry .entry-cover a {
+    color: var(--secondary);
+    box-shadow: 0 1px 0 var(--primary)
 }
