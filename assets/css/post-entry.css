@@ -39,12 +39,13 @@
 }
 
 .post-entry {
+    min-height: 180px;
     position: relative;
     margin-bottom: var(--gap);
     padding: var(--gap);
     background: var(--entry);
     border-radius: var(--radius);
-    text-align: justify;
+    /* text-align: justify; */
     transition: transform .1s
 }
 
@@ -65,7 +66,7 @@
     margin: 8px 0;
     color: var(--secondary);
     font-size: 14px;
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 1.6;
     overflow: hidden;
     display: -webkit-box;
@@ -122,15 +123,16 @@
 
 @media screen and (min-width:600px) {
   .post-entry .entry-cover {
+      float: left;
+      position: relative;
       margin-right: var(--gap);
-      margin-bottom: var(--gap);
       text-align: left;
-      width: 250px;
-      float: left
+      width: 250px
   }
 
   .post-entry .entry-cover img {
       border-radius: var(--radius);
+      margin-bottom: var(--gap);
       pointer-events: none;
       width: 100%
   }
