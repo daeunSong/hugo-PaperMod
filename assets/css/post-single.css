@@ -3,14 +3,14 @@
 }
 
 .post-title {
-    margin-bottom: 2px;
-    font-size: 40px;
+    margin-bottom: 12px;
+    font-size: 36px;
     transform: translateX(-2px)
 }
 
 .post-meta {
-    color: var(--secondary);
-    font-size: 14px;
+    /* color: var(--secondary); */
+    font-size: 18px;
     display: flex;
     flex-wrap: wrap
 }
@@ -23,7 +23,10 @@
 }
 
 .post-content {
-    color: var(--content)
+    color: var(--content);
+    font-size: 16px;
+    text-align: justify;
+    /* line-height: 1.4; */
 }
 
 .post-content h3,
@@ -259,7 +262,15 @@
 }
 
 .post-footer {
-    margin-top: 56px
+    margin-top: 20px
+    /* margin-top: 56px */
+}
+
+.post-footer h4 {
+    margin-bottom: 14px;
+    color: var(--secondary);
+    font-style: italic;
+    font-size: 16px
 }
 
 .post-tags li {

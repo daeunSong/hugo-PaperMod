@@ -21,7 +21,8 @@
 }
 
 .first-entry .entry-header h2 {
-    font-size: 34px
+    font-size: 34px;
+    margin-bottom: 2px
 }
 
 .first-entry .entry-content {
@@ -39,9 +40,10 @@
 }
 
 .post-entry {
-    min-height: 170px;
+    min-height: 145px;
     position: relative;
-    margin-bottom: var(--gap);
+    /* margin-bottom: var(--gap); */
+    margin-bottom: 8px;
     padding: var(--gap);
     background: var(--entry);
     border-radius: var(--radius);
@@ -49,7 +51,11 @@
     transition: transform .1s
 }
 
-.post-entry:active {
+/* .post-entry:active {
+    transform: scale(.96)
+} */
+
+.post-entry .post-tags li:active {
     transform: scale(.96)
 }
 
@@ -58,12 +64,12 @@
 }
 
 .entry-header h2 {
-    margin-top: 5px;
-    font-size: 20px;
+    margin-top: 2px;
+    font-size: 17px;
 }
 
 .entry-content {
-    margin: 8px 0;
+    margin: 1px 0;
     color: var(--secondary);
     font-size: 14px;
     /* text-align: justify; */
@@ -75,8 +81,9 @@
 }
 
 .entry-footer {
-    color: var(--secondary);
-    font-size: 13px
+    /* color: var(--secondary); */
+    margin-top: 1px;
+    font-size: 14px
 }
 
 .entry-link {
@@ -108,6 +115,33 @@
     width: 100%
 }
 
+
+.post-entry .post-tags li {
+    display: inline-block;
+    /* margin-inline-end: 3px; */
+    /* margin-bottom: 5px */
+}
+
+.post-entry .post-tags a,
+.share-buttons {
+    border: 1px solid var(--tertiary)
+}
+
+.post-entry .post-tags a {
+    display: block;
+    padding-inline-start: 12px;
+    padding-inline-end: 12px;
+    color: var(--secondary);
+    font-size: 12px;
+    line-height: 24px;
+    background: var(--code-bg);
+    border-radius: 4px
+}
+
+.post-entry .post-tags a:hover {
+    background: var(--border)
+}
+
 @media screen and (max-width:600px) {
   .post-entry .entry-cover {
       text-align: center
@@ -127,7 +161,7 @@
       position: relative;
       margin-right: var(--gap);
       text-align: left;
-      width: 230px
+      width: 180px
   }
 
   .post-entry .entry-cover img {
