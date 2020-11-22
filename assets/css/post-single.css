@@ -4,6 +4,7 @@
 
 .post-title {
     margin-bottom: 12px;
+    text-align: center;
     font-size: 36px;
     transform: translateX(-2px)
 }
@@ -11,7 +12,8 @@
 .post-meta {
     /* color: var(--secondary); */
     font-size: 18px;
-    display: flex;
+    text-align: center;
+    /* display: flex; */
     flex-wrap: wrap
 }
 
@@ -267,12 +269,16 @@
 }
 
 .post-footer h4 {
+    text-align: center;
     margin-bottom: 14px;
     color: var(--secondary);
     font-style: italic;
     font-size: 16px
 }
 
+.post-tags {
+    text-align: center;
+}
 .post-tags li {
     display: inline-block;
     margin-inline-end: 3px;

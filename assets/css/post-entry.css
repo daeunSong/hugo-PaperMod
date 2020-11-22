@@ -55,6 +55,9 @@
     transform: scale(.96)
 } */
 
+.post-entry .post-tags{
+    text-align: left;
+}
 .post-entry .post-tags li:active {
     transform: scale(.96)
 }
