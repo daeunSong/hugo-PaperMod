@@ -33,14 +33,21 @@
 }
 
 .archive-entry-title {
-    margin: 5px 0;
-    font-weight: 400
+    margin: 3px 0;
+    font-weight: 500
 }
 
 .archive-count,
 .archive-meta {
-    color: var(--secondary);
+    color: var(--content);
     font-size: 14px
+}
+
+.archive-footer {
+    color: var(--secondary);
+    margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
 }
 
 @media (max-width:800px) {
