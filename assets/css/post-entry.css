@@ -48,6 +48,7 @@
     background: var(--entry);
     border-radius: var(--radius);
     /* text-align: justify; */
+    line-height: 1.4;
     transition: transform .1s
 }
 
@@ -55,9 +56,12 @@
     transform: scale(.96)
 } */
 
-.post-entry .post-tags{
+.post-entry .post-tags {
+    margin-top: 4px;
+    margin-bottom: -10px;
     text-align: left;
 }
+
 .post-entry .post-tags li:active {
     transform: scale(.96)
 }
@@ -67,7 +71,8 @@
 }
 
 .entry-header h2 {
-    margin-top: 2px;
+    /* margin-top: 2px; */
+    margin-bottom: 4px;
     font-size: 17px;
 }
 
@@ -84,7 +89,7 @@
 }
 
 .entry-footer {
-    /* color: var(--secondary); */
+    color: var(--content);
     margin-top: 1px;
     font-size: 14px
 }
