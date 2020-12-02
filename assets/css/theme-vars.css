@@ -5,13 +5,14 @@
     --main-width: 750px;
     --header-height: 60px;
     --footer-height: 60px;
-    --radius: 8px;
+    --radius: 5px;
     --theme: #fff;
     --entry: #fff;
     --primary: rgba(0, 0, 0, 0.88);
     --secondary: rgba(0, 0, 0, 0.56);
     --tertiary: rgba(0, 0, 0, 0.1);
-    --content: rgba(0, 0, 0, 0.73);
+    --content: rgba(0, 0, 0, 0.68);
+    --hover: #0055b7;
     --hljs-bg: #1c1d21;
     --code-bg: #f5f5f5;
     --border: #eee

@@ -24,6 +24,10 @@
     display: flex
 }
 
+a:hover {
+    color: var(--hover);
+}
+
 .pagination a {
     color: var(--theme);
     font-size: 13px;
