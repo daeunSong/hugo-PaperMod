@@ -135,7 +135,7 @@ div.item {
   margin: 0.5em 0 0.4em 0;
   color: var(--primary);
   font-weight: 550;
-  line-height: 1.4em;
+  /* line-height: 1.4em; */
 }
 
 /* @media (min-width: 62em) {
@@ -166,8 +166,7 @@ div.item {
   color: var(--content);
   font-weight: 400;
   margin-left: .5rem;
-  /* margin-bottom: 0.8em; */
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 
 #timeline section.year section ul li:before {
