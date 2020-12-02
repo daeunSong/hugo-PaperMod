@@ -43,7 +43,7 @@
     min-height: 145px;
     position: relative;
     /* margin-bottom: var(--gap); */
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     padding: var(--gap);
     background: var(--entry);
     border-radius: var(--radius);
@@ -136,7 +136,7 @@
 
 .post-entry .post-tags a,
 .share-buttons {
-    border: 1px solid var(--tertiary)
+    border: 0px solid var(--tertiary)
 }
 
 .post-entry .post-tags a {
@@ -145,9 +145,9 @@
     padding-inline-end: 12px;
     color: var(--secondary);
     font-size: 12px;
-    line-height: 24px;
-    background: var(--code-bg);
-    border-radius: 4px
+    line-height: 25px;
+    background: var(--tertiary);
+    /* border-radius: 4px */
 }
 
 .post-entry .post-tags a:hover {
