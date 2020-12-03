@@ -154,7 +154,6 @@
     background: var(--border)
 }
 
-
 .link-tags li {
     display: inline-block;
     margin-inline-end: 5px;
@@ -173,6 +172,7 @@
     font-size: 12px;
     line-height: 25px;
     background: var(--tertiary);
+    border-radius: var(--radius);
     /* border-radius: 4px */
 }
 
