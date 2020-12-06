@@ -7,5 +7,19 @@
     justify-content: center;
     height: 80%;
     font-size: 160px;
+    font-weight: 700;
+
+}
+
+.not-found2 {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    font-size: 25px;
     font-weight: 700
 }
