@@ -286,12 +286,13 @@
 .post-tags li {
     display: inline-block;
     margin-inline-end: 3px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 .post-tags a,
 .share-buttons {
-    border: 1px solid var(--tertiary)
+    border: 1px solid var(--tertiary);
+    /* box-shadow: 0 0 0 0 var(--primary) */
 }
 
 .post-tags a {
