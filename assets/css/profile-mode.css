@@ -1,7 +1,7 @@
 .buttons,
 .main .profile {
     display: flex;
-    justify-content: center
+    justify-content: left
 }
 
 .main .profile {
@@ -10,7 +10,7 @@
     right: 0;
     align-items: center;
     height: 80%;
-    text-align: center
+    text-align: left
 }
 
 .profile .profile_inner h1 {
@@ -23,14 +23,123 @@
 }
 
 .profile img {
-    display: inline-table;
+    /* display: inline-table; */
     border-radius: 50%;
     pointer-events: none
 }
 
+.profile_ {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 320px;
+    margin-left: 225px;
+    /* margin: var(--gap) 0 calc(var(--gap) * 2) 0 */
+}
+
+.profile_ .entry-header {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
+}
+
+.profile_ .entry-header h2 {
+    margin-top: 30px;
+    font-size: 34px;
+    margin-bottom: 4px;
+}
+
+.profile_ .entry-content {
+    margin: 1px 0;
+    color: var(--secondary);
+    font-size: 16px;
+    /* text-align: justify; */
+    line-height: 1.6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* -webkit-line-clamp: 5 */
+}
+
+/* .entry-content p {
+    font-size: 14px;
+} */
+
+.profile_ .entry-footer {
+    color: var(--content);
+    margin-top: 1px;
+    font-size: 14px
+}
+
 @media screen and (max-width:600px) {
+  .main .profile {
+      display: relative;
+      justify-content: center
+  }
+  .main .profile {
+      position: relative;
+      left: 0;
+      right: 0;
+      align-items: center;
+      height: 80%;
+      text-align: center
+  }
     .profile img {
-        transform: scale(.85)
+        align-items: center;
+        margin-top: -10px;
+        margin-bottom: -70px;
+        /* transform: scale(0.9) */
+    }
+
+    .profile_ {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        /* min-height: 320px; */
+        margin-left: 0px;
+        /* margin: var(--gap) 0 calc(var(--gap) * 2) 0 */
+    }
+
+    .profile_ .entry-header {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3
+    }
+
+    .profile_ .entry-header h2 {
+        /* margin-top: 10px; */
+        font-size: 34px;
+        margin-bottom: 4px;
+    }
+
+    .profile_ .entry-content {
+        margin: 10px 0;
+        color: var(--secondary);
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.6;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        /* -webkit-line-clamp: 5 */
+    }
+
+    /* .entry-content p {
+        font-size: 14px;
+    } */
+
+    .profile_ .entry-footer {
+        color: var(--content);
+        margin-top: 1px;
+        font-size: 14px;
+        /* transform: scale(1.1); */
+        /* margin-left: 30px; */
+        /* margin-bottom: -20px; */
     }
 }
 
