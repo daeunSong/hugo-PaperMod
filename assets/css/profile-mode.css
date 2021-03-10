@@ -22,10 +22,27 @@
     font-size: 18px
 }
 
-.profile img {
+.provile .avatar {
+  position: relative;
+}
+.profile .avatar img {
     /* display: inline-table; */
     border-radius: 50%;
-    pointer-events: none
+    /* pointer-events: none */
+}
+
+.profile .avatar img.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.profile:hover .avatar img.image-hover {
+  opacity: 1;
 }
 
 .profile_ {
@@ -34,7 +51,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 320px;
-    margin-left: 225px;
+    margin-left: 260px;
     /* margin: var(--gap) 0 calc(var(--gap) * 2) 0 */
 }
 
@@ -86,13 +103,31 @@
       height: 80%;
       text-align: center
   }
-    .profile img {
+
+  .profile .avatar {
+    position: relative;
+  }
+    .profile .avatar img {
         align-items: center;
         margin-top: -10px;
-        margin-bottom: -70px;
+        margin-bottom: -50px;
+        pointer-events: none;
         /* transform: scale(0.9) */
     }
-
+    .profile .avatar img.image-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity .5s;
+    }
+    .profile:hover .avatar img.image-hover {
+      opacity: 1;
+      /*change this to 0 to remove hover event*/
+    }
     .profile_ {
         position: relative;
         display: flex;
